@@ -1,6 +1,6 @@
 package com.olteanuflorin86.msscbeerservicev1.web.model;
 
-import java.util.List;
+import java.util.List; 
 
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
