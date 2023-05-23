@@ -1,6 +1,6 @@
 package com.olteanuflorin86.msscbeerservicev1.domain;
 
-import java.math.BigDecimal;
+import java.math.BigDecimal; 
 import java.sql.Timestamp;
 import java.util.UUID;
 
@@ -20,6 +20,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Entity 
 public class Beer {
 
