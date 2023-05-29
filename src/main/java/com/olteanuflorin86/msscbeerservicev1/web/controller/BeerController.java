@@ -1,6 +1,7 @@
 package com.olteanuflorin86.msscbeerservicev1.web.controller;
 
-import java.util.UUID; 
+import java.util.List;
+import java.util.UUID;  
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +19,12 @@ import lombok.RequiredArgsConstructor;
 public class BeerController {
 	
 	private final BeerService beerService;
-
+	
+	@GetMapping
+	public ResponseEntity<List<BeerDto>> getAllBeers() {
+		return new ResponseEntity<>(beerService.getBeers(), HttpStatus.OK);
+	}
+	
 	@GetMapping("/{beerId}")	
 	public ResponseEntity<BeerDto> getBeerById(@PathVariable("beerId") UUID beerId) {
 		
@@ -27,7 +33,7 @@ public class BeerController {
 	
 	@PostMapping
 	public ResponseEntity<BeerDto> saveNewBeer(@RequestBody @Validated BeerDto beerDto) {
-		
+
 		return new ResponseEntity<>(beerService.saveNewBeer(beerDto), HttpStatus.CREATED);
 	}
 	

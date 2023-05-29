@@ -1,6 +1,7 @@
 package com.olteanuflorin86.msscbeerservicev1.bootstrap;
 
-import java.math.BigDecimal; 
+import java.math.BigDecimal;
+import java.util.UUID;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Component;
 import com.olteanuflorin86.msscbeerservicev1.domain.Beer;
 import com.olteanuflorin86.msscbeerservicev1.repositories.BeerRepository;
 
-@Component
+//@Component
 public class BeerLoader implements CommandLineRunner {
 	
 	public static final String BEER_1_UPC = "0631234200036";

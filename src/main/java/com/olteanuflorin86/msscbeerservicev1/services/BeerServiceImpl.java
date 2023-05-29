@@ -1,5 +1,7 @@
 package com.olteanuflorin86.msscbeerservicev1.services;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID; 
 
 import org.springframework.stereotype.Service;
@@ -19,6 +21,18 @@ public class BeerServiceImpl implements BeerService {
 	private final BeerRepository beerRepository;
 	private final BeerMapper beerMapper;
 
+	@Override
+	public List<BeerDto> getBeers() {
+		Iterable<Beer> beerIterable = beerRepository.findAll(); 
+		List<Beer> beerList = new ArrayList<>();
+		List<BeerDto> beerDtoList = new ArrayList<>();
+		beerIterable.forEach(beerList::add);
+		beerList.forEach(beer -> {
+			beerDtoList.add(beerMapper.beerToBeerDto(beer));
+		});
+		return beerDtoList;
+	}
+	
 	@Override
 	public BeerDto getById(UUID beerId) {
 		return beerMapper.beerToBeerDto(

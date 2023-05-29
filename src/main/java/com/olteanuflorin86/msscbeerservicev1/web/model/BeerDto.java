@@ -1,6 +1,6 @@
 package com.olteanuflorin86.msscbeerservicev1.web.model;
 
-import java.math.BigDecimal;
+import java.math.BigDecimal; 
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
@@ -10,7 +10,6 @@ import javax.validation.constraints.Null;
 import javax.validation.constraints.Positive;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatTypes;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
