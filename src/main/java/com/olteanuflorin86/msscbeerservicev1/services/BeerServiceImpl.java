@@ -1,8 +1,9 @@
 package com.olteanuflorin86.msscbeerservicev1.services;
 
-import java.util.UUID;  
+import java.util.UUID;   
 import java.util.stream.Collectors;
 
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -27,11 +28,14 @@ public class BeerServiceImpl implements BeerService {
 	private final BeerRepository beerRepository;
 	private final BeerMapper beerMapper;
 
+	@Cacheable(cacheNames = "beerListCache", condition = "#showInventoryOnHand == false")
 	@Override
 	public BeerPagedList listBeers(String beerName, BeerStyleEnum beerStyle, PageRequest pageRequest, Boolean showInventoryOnHand) {
 
 		BeerPagedList beerPagedList;
 		Page<Beer> beerPage;
+		
+		System.out.println("listBeers caching is called");
 		
 		if(!StringUtils.isEmpty(beerName) && !StringUtils.isEmpty(beerStyle)) {
 			// search both
@@ -67,13 +71,16 @@ public class BeerServiceImpl implements BeerService {
 									beerPage.getPageable().getPageSize()),
 					beerPage.getTotalElements());
 		}
-		System.out.println(beerPagedList);
+
 		return beerPagedList;
 	}
 
-	
+	@Cacheable(cacheNames = "beerCache", key = "#beerId", condition = "#showInventoryOnHand == false")	
 	@Override
 	public BeerDto getById(UUID beerId, Boolean showInventoryOnHand) {
+		
+		System.out.println("getById caching is called");
+		
 		if(showInventoryOnHand) {
 			return beerMapper.beerToBeerDtoWithInventory(beerRepository.findById(beerId).orElseThrow(NotFoundException::new));
 		} else {
