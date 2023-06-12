@@ -1,5 +1,7 @@
 package com.olteanuflorin86.msscbeerservicev1.config;
 
+import javax.jms.Destination;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.support.converter.MappingJackson2MessageConverter;
@@ -10,6 +12,7 @@ import org.springframework.jms.support.converter.MessageType;
 public class JmsConfig {
 	
 	public static final String BREWING_REQUEST_QUEUE = "brewing-request";
+	public static final String NEW_INVENTORY_QUEUE = "new-inventory";
 
 	@Bean // Serialize message content to json using TextMessage
     public MessageConverter jacksonJmsMessageConverter() {

@@ -1,6 +1,6 @@
-package com.olteanuflorin86.msscbeerservicev1.services;
+package com.olteanuflorin86.msscbeerservicev1.services.brewing;
 
-import java.util.List;
+import java.util.List;  
 
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
