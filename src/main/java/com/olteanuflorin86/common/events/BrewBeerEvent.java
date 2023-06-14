@@ -1,4 +1,4 @@
-package com.olteanuflorin86.msscbeerservicev1.events;
+package com.olteanuflorin86.common.events;
 
 import com.olteanuflorin86.msscbeerservicev1.web.model.BeerDto; 
 
