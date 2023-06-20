@@ -101,7 +101,7 @@ public class BeerLoader implements CommandLineRunner {
                 .beerName("Mango Bobs")
                 .beerStyle(BeerStyleEnum.IPA.name())
                 .minOnHand(12)
-                .quantityToBrew(200)
+                .quantityToBrew(14)
                 .price(new BigDecimal("12.95"))
                 .upc(BEER_1_UPC)
                 .build();
@@ -110,7 +110,7 @@ public class BeerLoader implements CommandLineRunner {
                 .beerName("Galaxy Cat")
                 .beerStyle(BeerStyleEnum.PALE_ALE.name())
                 .minOnHand(12)
-                .quantityToBrew(200)
+                .quantityToBrew(14)
                 .price(new BigDecimal("12.95"))
                 .upc(BEER_2_UPC)
                 .build();
@@ -119,7 +119,7 @@ public class BeerLoader implements CommandLineRunner {
                 .beerName("Pinball Porter")
                 .beerStyle(BeerStyleEnum.PALE_ALE.name())
                 .minOnHand(12)
-                .quantityToBrew(200)
+                .quantityToBrew(14)
                 .price(new BigDecimal("12.95"))
                 .upc(BEER_3_UPC)
                 .build();

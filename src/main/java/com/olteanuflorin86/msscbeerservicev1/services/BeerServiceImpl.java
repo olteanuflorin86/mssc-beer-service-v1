@@ -1,6 +1,6 @@
 package com.olteanuflorin86.msscbeerservicev1.services;
 
-import java.util.UUID;   
+import java.util.UUID;    
 import java.util.stream.Collectors;
 
 import org.springframework.cache.annotation.Cacheable;

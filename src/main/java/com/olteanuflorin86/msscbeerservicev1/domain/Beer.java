@@ -51,5 +51,13 @@ public class Beer {
 	private BigDecimal price;
 	
 	private Integer minOnHand; 
-	private Integer quantityToBrew; 
+	private Integer quantityToBrew;
+	@Override
+	public String toString() {
+		return "Beer [id=" + id + ", version=" + version + ", createdDate=" + createdDate + ", lastModifiedDate="
+				+ lastModifiedDate + ", beerName=" + beerName + ", beerStyle=" + beerStyle + ", upc=" + upc + ", price="
+				+ price + ", minOnHand=" + minOnHand + ", quantityToBrew=" + quantityToBrew + "]";
+	} 
+	
+	
 }

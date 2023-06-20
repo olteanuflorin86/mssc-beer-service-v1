@@ -12,7 +12,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mssc-beer-service-v1</name>
 	<description>Beer Microservice Live Coding</description>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -30,6 +29,12 @@
 			<groupId>org.ehcache</groupId>
 			<artifactId>ehcache</artifactId>
 		</dependency>
+		<!-- 
+		<dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>artemis-jms-server</artifactId>
+        </dependency>
+        -->
 		<!-- 
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
