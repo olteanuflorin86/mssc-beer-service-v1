@@ -1,4 +1,4 @@
-package com.olteanuflorin86.msscbeerservicev1.web.model;
+package com.olteanuflorin86.brewery.model;
 
 import java.io.Serializable;
 import java.util.List;  

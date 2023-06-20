@@ -8,10 +8,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import com.olteanuflorin86.brewery.model.BeerDto;
+import com.olteanuflorin86.brewery.model.BeerPagedList;
+import com.olteanuflorin86.brewery.model.BeerStyleEnum;
 import com.olteanuflorin86.msscbeerservicev1.services.BeerService;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerDto;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerPagedList;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerStyleEnum;
 
 import lombok.RequiredArgsConstructor;
 

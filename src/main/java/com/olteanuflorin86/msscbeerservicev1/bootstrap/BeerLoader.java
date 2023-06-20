@@ -72,9 +72,9 @@ import java.math.BigDecimal;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import com.olteanuflorin86.brewery.model.BeerStyleEnum;
 import com.olteanuflorin86.msscbeerservicev1.domain.Beer;
 import com.olteanuflorin86.msscbeerservicev1.repositories.BeerRepository;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerStyleEnum;
 
 import lombok.RequiredArgsConstructor;
 

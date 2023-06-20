@@ -5,12 +5,12 @@ import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.olteanuflorin86.common.events.BrewBeerEvent;
-import com.olteanuflorin86.common.events.NewInventoryEvent;
+import com.olteanuflorin86.brewery.model.BeerDto;
+import com.olteanuflorin86.brewery.model.events.BrewBeerEvent;
+import com.olteanuflorin86.brewery.model.events.NewInventoryEvent;
 import com.olteanuflorin86.msscbeerservicev1.config.JmsConfig;
 import com.olteanuflorin86.msscbeerservicev1.domain.Beer;
 import com.olteanuflorin86.msscbeerservicev1.repositories.BeerRepository;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerDto;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

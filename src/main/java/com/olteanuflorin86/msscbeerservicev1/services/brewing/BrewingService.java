@@ -6,7 +6,7 @@ import org.springframework.jms.core.JmsTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-import com.olteanuflorin86.common.events.BrewBeerEvent;
+import com.olteanuflorin86.brewery.model.events.BrewBeerEvent;
 import com.olteanuflorin86.msscbeerservicev1.config.JmsConfig;
 import com.olteanuflorin86.msscbeerservicev1.domain.Beer;
 import com.olteanuflorin86.msscbeerservicev1.repositories.BeerRepository;

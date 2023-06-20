@@ -3,12 +3,12 @@ package com.olteanuflorin86.msscbeerservicev1.web.mappers;
 import org.springframework.beans.factory.annotation.Autowired; 
 import org.springframework.stereotype.Component;
 
+import com.olteanuflorin86.brewery.model.BeerDto;
+import com.olteanuflorin86.brewery.model.BeerStyleEnum;
+import com.olteanuflorin86.brewery.model.BeerDto.BeerDtoBuilder;
 import com.olteanuflorin86.msscbeerservicev1.domain.Beer;
 import com.olteanuflorin86.msscbeerservicev1.domain.Beer.BeerBuilder;
 import com.olteanuflorin86.msscbeerservicev1.services.inventory.BeerInventoryService;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerDto;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerDto.BeerDtoBuilder;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerStyleEnum;
 
 @Component
 public class MyBeerMapper {

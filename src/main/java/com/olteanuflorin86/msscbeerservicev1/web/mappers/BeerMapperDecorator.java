@@ -1,10 +1,10 @@
 package com.olteanuflorin86.msscbeerservicev1.web.mappers;
 
-import org.springframework.beans.factory.annotation.Autowired; 
+import org.springframework.beans.factory.annotation.Autowired;
 
+import com.olteanuflorin86.brewery.model.BeerDto;
 import com.olteanuflorin86.msscbeerservicev1.domain.Beer;
 import com.olteanuflorin86.msscbeerservicev1.services.inventory.BeerInventoryService;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerDto;
 
 public abstract class BeerMapperDecorator implements BeerMapper {
 

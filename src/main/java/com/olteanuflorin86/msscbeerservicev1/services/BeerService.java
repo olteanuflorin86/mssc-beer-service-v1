@@ -4,9 +4,9 @@ import java.util.UUID;
 
 import org.springframework.data.domain.PageRequest;
 
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerDto;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerPagedList;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerStyleEnum;
+import com.olteanuflorin86.brewery.model.BeerDto;
+import com.olteanuflorin86.brewery.model.BeerPagedList;
+import com.olteanuflorin86.brewery.model.BeerStyleEnum;
 
 public interface BeerService {
 

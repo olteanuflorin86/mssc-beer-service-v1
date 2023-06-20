@@ -19,10 +19,10 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.olteanuflorin86.brewery.model.BeerDto;
+import com.olteanuflorin86.brewery.model.BeerStyleEnum;
 import com.olteanuflorin86.msscbeerservicev1.bootstrap.BeerLoader;
 import com.olteanuflorin86.msscbeerservicev1.services.BeerService;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerDto;
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerStyleEnum;
 
 @WebMvcTest(BeerController.class)
 public class BeerControllerTest {

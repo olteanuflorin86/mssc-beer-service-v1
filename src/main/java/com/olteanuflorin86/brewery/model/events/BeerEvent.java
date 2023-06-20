@@ -1,8 +1,8 @@
-package com.olteanuflorin86.common.events;
+package com.olteanuflorin86.brewery.model.events;
 
-import java.io.Serializable;  
+import java.io.Serializable;
 
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerDto;
+import com.olteanuflorin86.brewery.model.BeerDto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,6 +1,6 @@
-package com.olteanuflorin86.common.events;
+package com.olteanuflorin86.brewery.model.events;
 
-import com.olteanuflorin86.msscbeerservicev1.web.model.BeerDto; 
+import com.olteanuflorin86.brewery.model.BeerDto;
 
 import lombok.NoArgsConstructor;
 
