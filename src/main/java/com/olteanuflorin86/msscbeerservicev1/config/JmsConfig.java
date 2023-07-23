@@ -1,6 +1,6 @@
 package com.olteanuflorin86.msscbeerservicev1.config;
 
-import javax.jms.ConnectionFactory;
+import javax.jms.ConnectionFactory; 
 
 import org.springframework.boot.autoconfigure.jms.DefaultJmsListenerContainerFactoryConfigurer;
 import org.springframework.context.annotation.Bean;   
